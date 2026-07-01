@@ -1,26 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sobre copa do mundo</title>
-        <style>
-            header{
-             background-color: #2FBC42
-             color:
-            }
-        </style>
-    </head>
-    <body>
-        <head>
-            <h1>Meu blog Cup World</h1> 
-            <h2>Meu primeiro post</h2>
-            <p>Vou compartilhar conhecimentos sobre a copa do mundo 2026</p>
-        </head>
-        <main>
-            <p>Por: Gusta curiosidade</p>
-            <p>Boas-vindas ao meu novo blog! Aqui vou comparilhar tudo sobre a copa de 2026 e muito mais curiosidade sobre a copa</p>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu Virtual das Campeãs do Mundo</title>
+    <style>
+        /* Estilos Gerais / Tema Escuro e Dourado */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            border-bottom: 3px solid #d4af37; /* Dourado */
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #d4af37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #aaa;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Grid do Museu */
+        .museu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Cartão de cada País */
+        .galeria-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .galeria-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        /* Espaço da Imagem (Placeholder) */
+        .espaco-imagem {
+            width: 100%;
+            height: 220px;
+            background-color: #2a2a2a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .espaco-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Se não tiver imagem, mostra esse texto de ajuda */
+        .espaco-imagem::before {
+            content: "Coloque sua imagem aqui";
+            position: absolute;
+            color: #555;
+            font-size: 0.9rem;
+            z-index: 1;
+        }
+
+        .espaco-imagem img {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Informações do Card */
+        .card-info {
+            padding: 1.5rem;
+        }
+
+        .card-info h2 {
+            font-size: 1.5rem;
+            color: #d4af37;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .estrelas {
+            color: #d4af37;
+            font-size: 1.1rem;
+        }
+
+        .anos-titulos {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .detalhes {
+            color: #bbb;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            background-color: #050505;
+            color: #777;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Museu da Copa do Mundo</h1>
+        <p>Uma viagem pela história das seleções que alcançaram a glória eterna</p>
+    </header>
+
+    <div class="container">
+        <main class="museu-grid">
+
+            <!-- BRASIL -->
+            <article class="galeria-card">
+                <div class="espaco-imagem">
+                    <!-- LEIA-ME: Substitua o 'link_da_sua_imagem.jpg' pelo caminho real da foto -->
+                    <img src="link_da_sua_imagem.jpg" alt="Foto Histórica do Brasil Campeão">
+                </div>
+                <div class="card-info">
+                    <h2>Brasil <span class="estrelas">★★★★★</span></h2>
+                    <p class="anos-titulos">Anos: 1958, 1962, 1970, 1994, 2002</p>
+                    <p class="detalhes">O único pentacampeão do planeta. Conhecido por apresentar ao mundo o "Futebol Arte", Pelé, Garrincha, Ronaldo e tantas outras lendas que mudaram a história do esporte.</p>
+                </div>
+            </article>
+
+            <!-- ALEMANHA -->
+            <article class="galeria-card">
+                <div class="espaco-imagem">
+                    <img src="link_da_sua_imagem.jpg" alt="Foto da Alemanha Campeã">
+                </div>
+                <div class="card-info">
+                    <h2>Alemanha <span class="estrelas">★★★★</span></h2>
+                    <p class="anos-titulos">Anos: 1954, 1974, 1990, 2014</p>
+                    <p class="detalhes">Uma potência de consistência implacável. Da virada histórica no "Milagre de Berna" em 54 ao tetracampeonato dominante no Brasil em 2014.</p>
+                </div>
+            </article>
+
+            <!-- ITÁLIA -->
+            <article class="galeria-card">
+                <div class="espaco-imagem">
+                    <img src="link_da_sua_imagem.jpg" alt="Foto da Itália Campeã">
+                </div>
+                <div class="card-info">
+                    <h2>Itália <span class="estrelas">★★★★</span></h2>
+                    <p class="anos-titulos">Anos: 1934, 1938, 1982, 2006</p>
+                    <p class="detalhes">A "Azzurra" marcou a história com sua defesa lendária (Catenaccio) e táticas cirúrgicas, sendo a primeira seleção a conquistar o bicampeonato consecutivo.</p>
+                </div>
+            </article>
+
+            <!-- ARGENTINA -->
+            <article class="galeria-card">
+                <div class="espaco-imagem">
+                    <img src="link_da_sua_imagem.jpg" alt="Foto da Argentina Campeã">
+                </div>
+                <div class="card-info">
+                    <h2>Argentina <span class="estrelas">★★★</span></h2>
+                    <p class="anos-titulos">Anos: 1978, 1986, 2022</p>
+                    <p class="detalhes">Uma história rica movida pela paixão extrema. Da genialidade eterna de Diego Maradona em 86 à consagração genial de Lionel Messi no Catar em 2022.</p>
+                </div>
+            </article>
+
+            <!-- FRANÇA -->
+            <article class="galeria-card">
+                <div class="espaco-imagem">
+                    <img src="link_da_sua_imagem.jpg" alt="Foto da França Campeã">
+                </div>
+                <div class="card-info">
+                    <h2>França <span class="estrelas">★★</span></h2>
+                    <p class="anos-titulos">Anos: 1998, 2018</p>
+                    <p class="detalhes">Os "Bleus" dominaram o fim do século XX em casa sob a batuta de Zidane, e repetiram a dose em 2018 com uma geração explosiva liderada por Mbappé.</p>
+                </div>
+            </article>
+
+            <!-- URUGUAI -->
+            <article class="galeria-card">
+                <div class="espaco-imagem">
+                    <img src="link_da_sua_imagem.jpg" alt="Foto do Uruguai Campeão">
+                </div>
+                <div class="card-info">
+                    <h2>Uruguai <span class="estrelas">★★</span></h2>
+                    <p class="anos-titulos">Anos: 1930, 1950</p>
+                    <p class="detalhes">A "Celeste" é a pioneira do futebol. Venceu a primeiríssima Copa em 1930 e calou o Maracanã em 1950 no histórico e inesquecível "Maracanazo".</p>
+                </div>
+            </article>
+
+            <!-- INGLATERRA -->
+            <article class="galeria-card">
+                <div class="espaco-imagem">
+                    <img src="link_da_sua_imagem.jpg" alt="Foto da Inglaterra Campeã">
+                </div>
+                <div class="card-info">
+                    <h2>Inglaterra <span class="estrelas">★</span></h2>
+                    <p class="anos-titulos">Ano: 1966</p>
+                    <p class="detalhes">Os inventores do futebol moderno ergueram a taça mais cobiçada do mundo em casa, no lendário estádio de Wembley, em uma final emocionante contra a Alemanha Ocidental.</p>
+                </div>
+            </article>
+
+            <!-- ESPANHA -->
+            <article class="galeria-card">
+                <div class="espaco-imagem">
+                    <img src="link_da_sua_imagem.jpg" alt="Foto da Espanha Campeã">
+                </div>
+                <div class="card-info">
+                    <h2>Espanha <span class="estrelas">★</span></h2>
+                    <p class="anos-titulos">Ano: 2010</p>
+                    <p class="detalhes">A "Fúria" encantou o mundo na África do Sul com o estilo "Tiki-Taka", baseado na posse de bola extrema e passes perfeitos, coroada com o gol icônico de Iniesta na prorrogação.</p>
+                </div>
+            </article>
+
         </main>
-  
+    </div>
+
+    <footer>
+        <p>&copy; Meu Museu da Copa do Mundo - Organizado para os amantes do futebol.</p>
+    </footer>
+
 </body>
 </html>
