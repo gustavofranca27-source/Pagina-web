@@ -127,6 +127,30 @@
             font-size: 0.95rem;
         }
 
+        /* ÁREA DE REAÇÕES */
+        .reacoes {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid #333;
+        }
+
+        .reacoes button {
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .reacoes button:hover {
+            background-color: #333;
+            border-color: #d4af37;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -150,13 +174,18 @@
             <!-- BRASIL -->
             <article class="galeria-card">
                 <div class="espaco-imagem">
-                    <!-- LEIA-ME: Substitua o 'link_da_sua_imagem.jpg' pelo caminho real da foto -->
                     <img src="foto1.jpg" alt="Foto Histórica do Brasil Campeão">
                 </div>
                 <div class="card-info">
                     <h2>Brasil <span class="estrelas">★★★★★</span></h2>
                     <p class="anos-titulos">Anos: 1958, 1962, 1970, 1994, 2002</p>
                     <p class="detalhes">O único pentacampeão do planeta. Conhecido por apresentar ao mundo o "Futebol Arte", Pelé, Garrincha, Ronaldo e tantas outras lendas que mudaram a história do esporte.</p>
+                    
+                    <div class="reacoes">
+                        <button onclick="reagir(this)">❤️ <span>0</span></button>
+                        <button onclick="reagir(this)">🔥 <span>0</span></button>
+                        <button onclick="reagir(this)">🏆 <span>0</span></button>
+                    </div>
                 </div>
             </article>
 
@@ -169,6 +198,12 @@
                     <h2>Alemanha <span class="estrelas">★★★★</span></h2>
                     <p class="anos-titulos">Anos: 1954, 1974, 1990, 2014</p>
                     <p class="detalhes">Uma potência de consistência implacável. Da virada histórica no "Milagre de Berna" em 54 ao tetracampeonato dominante no Brasil em 2014.</p>
+                    
+                    <div class="reacoes">
+                        <button onclick="reagir(this)">❤️ <span>0</span></button>
+                        <button onclick="reagir(this)">🔥 <span>0</span></button>
+                        <button onclick="reagir(this)">🏆 <span>0</span></button>
+                    </div>
                 </div>
             </article>
 
@@ -181,6 +216,12 @@
                     <h2>Itália <span class="estrelas">★★★★</span></h2>
                     <p class="anos-titulos">Anos: 1934, 1938, 1982, 2006</p>
                     <p class="detalhes">A "Azzurra" marcou a história com sua defesa lendária (Catenaccio) e táticas cirúrgicas, sendo a primeira seleção a conquistar o bicampeonato consecutivo.</p>
+                    
+                    <div class="reacoes">
+                        <button onclick="reagir(this)">❤️ <span>0</span></button>
+                        <button onclick="reagir(this)">🔥 <span>0</span></button>
+                        <button onclick="reagir(this)">🏆 <span>0</span></button>
+                    </div>
                 </div>
             </article>
 
@@ -193,6 +234,12 @@
                     <h2>Argentina <span class="estrelas">★★★</span></h2>
                     <p class="anos-titulos">Anos: 1978, 1986, 2022</p>
                     <p class="detalhes">Uma história rica movida pela paixão extrema. Da genialidade eterna de Diego Maradona em 86 à consagração genial de Lionel Messi no Catar em 2022.</p>
+                    
+                    <div class="reacoes">
+                        <button onclick="reagir(this)">❤️ <span>0</span></button>
+                        <button onclick="reagir(this)">🔥 <span>0</span></button>
+                        <button onclick="reagir(this)">🏆 <span>0</span></button>
+                    </div>
                 </div>
             </article>
 
@@ -205,6 +252,12 @@
                     <h2>França <span class="estrelas">★★</span></h2>
                     <p class="anos-titulos">Anos: 1998, 2018</p>
                     <p class="detalhes">Os "Bleus" dominaram o fim do século XX em casa sob a batuta de Zidane, e repetiram a dose em 2018 com uma geração explosiva liderada por Mbappé.</p>
+                    
+                    <div class="reacoes">
+                        <button onclick="reagir(this)">❤️ <span>0</span></button>
+                        <button onclick="reagir(this)">🔥 <span>0</span></button>
+                        <button onclick="reagir(this)">🏆 <span>0</span></button>
+                    </div>
                 </div>
             </article>
 
@@ -217,6 +270,12 @@
                     <h2>Uruguai <span class="estrelas">★★</span></h2>
                     <p class="anos-titulos">Anos: 1930, 1950</p>
                     <p class="detalhes">A "Celeste" é a pioneira do futebol. Venceu a primeiríssima Copa em 1930 e calou o Maracanã em 1950 no histórico e inesquecível "Maracanazo".</p>
+                    
+                    <div class="reacoes">
+                        <button onclick="reagir(this)">❤️ <span>0</span></button>
+                        <button onclick="reagir(this)">🔥 <span>0</span></button>
+                        <button onclick="reagir(this)">🏆 <span>0</span></button>
+                    </div>
                 </div>
             </article>
 
@@ -229,6 +288,12 @@
                     <h2>Inglaterra <span class="estrelas">★</span></h2>
                     <p class="anos-titulos">Ano: 1966</p>
                     <p class="detalhes">Os inventores do futebol moderno ergueram a taça mais cobiçada do mundo em casa, no lendário estádio de Wembley, em uma final emocionante contra a Alemanha Ocidental.</p>
+                    
+                    <div class="reacoes">
+                        <button onclick="reagir(this)">❤️ <span>0</span></button>
+                        <button onclick="reagir(this)">🔥 <span>0</span></button>
+                        <button onclick="reagir(this)">🏆 <span>0</span></button>
+                    </div>
                 </div>
             </article>
 
@@ -241,6 +306,12 @@
                     <h2>Espanha <span class="estrelas">★</span></h2>
                     <p class="anos-titulos">Ano: 2010</p>
                     <p class="detalhes">A "Fúria" encantou o mundo na África do Sul com o estilo "Tiki-Taka", baseado na posse de bola extrema e passes perfeitos, coroada com o gol icônico de Iniesta na prorrogação.</p>
+                    
+                    <div class="reacoes">
+                        <button onclick="reagir(this)">❤️ <span>0</span></button>
+                        <button onclick="reagir(this)">🔥 <span>0</span></button>
+                        <button onclick="reagir(this)">🏆 <span>0</span></button>
+                    </div>
                 </div>
             </article>
 
@@ -251,5 +322,11 @@
         <p>&copy; Meu Museu da Copa do Mundo - Organizado para os amantes do futebol.</p>
     </footer>
 
+    <script>
+        function reagir(botao) {
+            let contador = botao.querySelector('span');
+            contador.textContent = parseInt(contador.textContent) + 1;
+        }
+    </script>
 </body>
 </html>
